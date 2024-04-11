@@ -53,11 +53,11 @@ msgstr "Animazioni Mixer"
 
 #: edit.js
 msgid "Autorotate"
-msgstr "RotazioneAutomaitca"
+msgstr "Rotazione Automatica"
 
 #: edit.js
 msgid "AutoScale"
-msgstr "ScalaAutomatica"
+msgstr "Scala Automaticamente"
 
 #: edit.js
 msgid "Back"
@@ -103,7 +103,7 @@ msgstr "Posizioni Camera"
 
 #: edit.js
 msgid "Camera Target"
-msgstr "Cenetro Camera"
+msgstr "Centratura Camera"
 
 #: edit.js
 msgid "CastShadow"

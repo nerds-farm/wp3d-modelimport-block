@@ -62,10 +62,10 @@
         "Animazioni Mixer"
       ],
       "Autorotate": [
-        "RotazioneAutomaitca"
+        "Rotazione Automatica"
       ],
       "AutoScale": [
-        "ScalaAutomatica"
+        "Scala Automaticamente"
       ],
       "Back": [
         "Dietro"
@@ -89,10 +89,10 @@
         "Posizioni Camera"
       ],
       "Camera Target": [
-        "Cenetro Camera"
+        "Centratura Camera"
       ],
       "CastShadow": [
-        "ProiettaOmbre"
+        "Proietta Ombre"
       ],
       "Center": [
         "Centro"
@@ -341,7 +341,7 @@
         "Traccia"
       ],
       "Target on DubleClick": [
-        "Puntamento al DoppioClick"
+        "Puntamento al Doppio Click"
       ],
       "Terrain color": [
         "Colore terreno"
