@@ -247,7 +247,21 @@ class Plugin {
     }
 
     public function block_categories_all($categories) {
-        return array_merge([['slug' => 'wp3d-blocks', 'title' => 'Wp3D']], $categories);
+        foreach ($categories as $cat) {
+            if ($cat['slug'] == 'wp3d-blocks') {
+                return $categories;
+            }
+        }
+        return array_merge(
+                [
+                    [
+                        'slug' => 'wp3d-blocks',
+                        'title' =>'Wp3D',
+                    ],
+                ],
+                $categories,
+        );
+        
     }
 
     public function wp3d_register_plugin_libs() {
