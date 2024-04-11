@@ -1,0 +1,700 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP3D ModelImport\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-02 06:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.4-alpha-57672\n"
+"X-Domain: wp3d-modelimport\n"
+"Language: "
+
+#: license.php:138
+msgid " Settings"
+msgstr ""
+
+#: license.php:193
+msgid "and click on Download > License certificate & purchase code"
+msgstr ""
+
+#: license.php:193
+msgid "Codecanyon Download page"
+msgstr ""
+
+#: license.php:354
+msgid "Download latest"
+msgstr ""
+
+#: license.php:196
+msgid "Envato Token"
+msgstr ""
+
+#: license.php:255 license.php:298
+msgid "Error parsing response, try again"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The import of models is allowed from Media Library, Folders and also from CDN. There are many allowed formats. Ideal to display all kinds models. The aim is to combine 3D and Web Design.."
+msgstr ""
+
+#: license.php:247 license.php:290
+msgid "Failed to look up Envato API"
+msgstr ""
+
+#: license.php:193
+msgid "find the plugin Item"
+msgstr ""
+
+#: license.php:343
+msgid "installed"
+msgstr ""
+
+#: license.php:222
+msgid "Integrations"
+msgstr ""
+
+#: license.php:162
+msgid "Invalid purchase code"
+msgstr ""
+
+#: license.php:336
+msgid "Item ID"
+msgstr ""
+
+#: license.php:337
+msgid "Item name"
+msgstr ""
+
+#: license.php:343
+msgid "Latest version"
+msgstr ""
+
+#: license.php:188 license.php:338
+msgid "License"
+msgstr ""
+
+#. Author of the plugin
+msgid "Nerds Farm srl"
+msgstr ""
+
+#: license.php:198
+msgid "Obtain your Personal Token now"
+msgstr ""
+
+#: license.php:191
+msgid "Purchase Code"
+msgstr ""
+
+#: license.php:203
+msgid "Remove data and Deactivate"
+msgstr ""
+
+#: license.php:185
+msgid "Settings"
+msgstr ""
+
+#: license.php:198
+msgid ""
+"simply Login with your Envato credentials, click on \"Create a new Token\", "
+"give it a name (not important) and check all Permissions (or at least \"List "
+"purchases you've made\" and optionally \"Download your purchased items\")"
+msgstr ""
+
+#: license.php:339
+msgid "Supported until"
+msgstr ""
+
+#: license.php:357
+msgid "Update now to latest version!"
+msgstr ""
+
+#. Name of the plugin
+msgid "WP3D ModelImport"
+msgstr ""
+
+#: license.php:193
+msgid "You can obtain it from"
+msgstr ""
+
+#: ViewportPanel.js
+msgid "Ratio"
+msgstr ""
+
+#: ViewportPanel.js
+msgid "Custom"
+msgstr ""
+
+#: ViewportPanel.js
+msgid "Fixed"
+msgstr ""
+
+#: ViewportPanel.js
+msgid ""
+"This option forces this block to remain fixed in fullscreen below everything."
+msgstr ""
+
+#: edit.js
+msgid "Type"
+msgstr ""
+
+#: edit.js
+msgid "Texture Image"
+msgstr ""
+
+#: edit.js
+msgid "Remove image"
+msgstr ""
+
+#: edit.js
+msgid "Replace image"
+msgstr ""
+
+#: edit.js
+msgid "Remove"
+msgstr ""
+
+#: edit.js
+msgid "Replace"
+msgstr ""
+
+#: edit.js
+msgid "IMPORTANT: Select the format of the model you are importing."
+msgstr ""
+
+#: edit.js
+msgid "To Floor"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Choose an image"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Environment"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Metalness"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Roughness"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Stars"
+msgstr ""
+
+#: SkyPanel.js
+msgid "Transparent"
+msgstr ""
+
+#: edit.js
+msgid "Add Point"
+msgstr ""
+
+#: edit.js
+msgid "Earth3D"
+msgstr ""
+
+#: edit.js
+msgid "Model3D Import"
+msgstr ""
+
+#: edit.js
+msgid "Texture"
+msgstr ""
+
+#: edit.js
+msgid "Options"
+msgstr ""
+
+#: edit.js
+msgid "Use Displacement"
+msgstr ""
+
+#: edit.js
+msgid "Use Bump"
+msgstr ""
+
+#: edit.js
+msgid "Add Clouds"
+msgstr ""
+
+#: edit.js
+msgid "Move Cloud"
+msgstr ""
+
+#: edit.js
+msgid "Rotation"
+msgstr ""
+
+#: edit.js
+msgid "Speed"
+msgstr ""
+
+#: edit.js
+msgid "Light"
+msgstr ""
+
+#: edit.js
+msgid "Light Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Points"
+msgstr ""
+
+#: edit.js
+msgid "Select shape"
+msgstr ""
+
+#: edit.js
+msgid "Circle"
+msgstr ""
+
+#: edit.js
+msgid "Hearth"
+msgstr ""
+
+#: edit.js
+msgid "Square"
+msgstr ""
+
+#: edit.js
+msgid "Size"
+msgstr ""
+
+#: edit.js
+msgid "Stroke"
+msgstr ""
+
+#: edit.js
+msgid "Display Number"
+msgstr ""
+
+#: edit.js
+msgid "Earth Color"
+msgstr ""
+
+#: edit.js
+msgid "Terrain color"
+msgstr ""
+
+#: edit.js
+msgid "Water color"
+msgstr ""
+
+#: edit.js
+msgid "Colors"
+msgstr ""
+
+#: edit.js
+msgid "Number"
+msgstr ""
+
+#: edit.js
+msgid "Background"
+msgstr ""
+
+#: edit.js
+msgid "Modal"
+msgstr ""
+
+#: edit.js
+msgid "Title"
+msgstr ""
+
+#: edit.js point:edit.js
+msgid "Content"
+msgstr ""
+
+#: edit.js
+msgid "Modal BG"
+msgstr ""
+
+#: edit.js
+msgid "Modal Quit"
+msgstr ""
+
+#: edit.js point:edit.js
+msgid "Button"
+msgstr ""
+
+#: edit.js
+msgid "Dimension"
+msgstr ""
+
+#: edit.js
+msgid "Text"
+msgstr ""
+
+#: edit.js
+msgid "Radius"
+msgstr ""
+
+#: point:edit.js
+msgid "Address"
+msgstr ""
+
+#: point:edit.js
+msgid "Generate Lat/Lng"
+msgstr ""
+
+#: point:edit.js
+msgid "To obtain the coordinates, right-click on the site"
+msgstr ""
+
+#: point:edit.js
+msgid "copy the coordinates and paste the two values of Latitude, Longitude."
+msgstr ""
+
+#: point:edit.js
+msgid "Latitude"
+msgstr ""
+
+#: point:edit.js
+msgid "Longitude"
+msgstr ""
+
+#: point:edit.js
+msgid "Label"
+msgstr ""
+
+#: point:edit.js
+msgid "Description"
+msgstr ""
+
+#: point:edit.js
+msgid "Image"
+msgstr ""
+
+#: point:edit.js
+msgid "Open in new tab"
+msgstr ""
+
+#: point:edit.js
+msgid "Add rel = nofollow"
+msgstr ""
+
+#: notice.php
+msgid "is not fully activated!"
+msgstr ""
+
+#: notice.php
+msgid "Activate now"
+msgstr ""
+
+#: build/blocks/earth3d/block.json
+msgctxt "block description"
+msgid "The 3D earth visualization with hotpoints."
+msgstr ""
+
+#: build/blocks/earth3d/earth-point/block.json
+msgctxt "block description"
+msgid "The single poit in earth3d block."
+msgstr ""
+
+#: edit.js
+msgid "Point"
+msgstr ""
+
+#: edit.js
+msgid "Enter some text"
+msgstr ""
+
+#: edit.js
+msgid "Import File 3D"
+msgstr ""
+
+#: edit.js
+msgid "import mode"
+msgstr ""
+
+#: edit.js
+msgid "Media File"
+msgstr ""
+
+#: edit.js
+msgid "External URL"
+msgstr ""
+
+#: edit.js
+msgid "Format Type"
+msgstr ""
+
+#: edit.js
+msgid "Upload Model File"
+msgstr ""
+
+#: edit.js
+msgid "Choose an 3D"
+msgstr ""
+
+#: edit.js
+msgid "Folder URL"
+msgstr ""
+
+#: edit.js
+msgid "File Name"
+msgstr ""
+
+#: edit.js
+msgid "The file name. (without extension)"
+msgstr ""
+
+#: edit.js
+msgid "Animation Mixer"
+msgstr ""
+
+#: edit.js
+msgid "Index Animation"
+msgstr ""
+
+#: edit.js
+msgid "AutoScale"
+msgstr ""
+
+#: edit.js
+msgid "Render"
+msgstr ""
+
+#: edit.js
+msgid "Output Encoding"
+msgstr ""
+
+#: edit.js
+msgid "Tone Mapping"
+msgstr ""
+
+#: edit.js
+msgid "Exposure"
+msgstr ""
+
+#: edit.js
+msgid "Ambient Light Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Spot Light Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Enable Left Light"
+msgstr ""
+
+#: edit.js
+msgid "Left Light Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Enable Right Light"
+msgstr ""
+
+#: edit.js
+msgid "Right Light Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Contact Shadow"
+msgstr ""
+
+#: edit.js
+msgid "Enable Contact Shadow"
+msgstr ""
+
+#: edit.js
+msgid "Blur X"
+msgstr ""
+
+#: edit.js
+msgid "Blur Y"
+msgstr ""
+
+#: edit.js
+msgid "Sensibility"
+msgstr ""
+
+#: edit.js
+msgid "Darkness"
+msgstr ""
+
+#: edit.js
+msgid "Opacity"
+msgstr ""
+
+#: edit.js
+msgid "Shadows"
+msgstr ""
+
+#: edit.js
+msgid "CastShadow"
+msgstr ""
+
+#: edit.js
+msgid "ReceiveShadow"
+msgstr ""
+
+#: edit.js
+msgid "Interactivity"
+msgstr ""
+
+#: edit.js
+msgid "Damping"
+msgstr ""
+
+#: edit.js
+msgid "Damping Factor"
+msgstr ""
+
+#: edit.js
+msgid "Zoom on Wheel"
+msgstr ""
+
+#: edit.js
+msgid "Autorotate"
+msgstr ""
+
+#: edit.js
+msgid "Camera"
+msgstr ""
+
+#: edit.js
+msgid "Fov"
+msgstr ""
+
+#: edit.js
+msgid "Zoom"
+msgstr ""
+
+#: edit.js
+msgid "Camera Position"
+msgstr ""
+
+#: edit.js
+msgid "Camera Target"
+msgstr ""
+
+#: edit.js
+msgid "Transform"
+msgstr ""
+
+#: edit.js
+msgid "Enable Transform"
+msgstr ""
+
+#: edit.js
+msgid "Reset Rotation"
+msgstr ""
+
+#: edit.js
+msgid "Reset position"
+msgstr ""
+
+#: edit.js
+msgid "Scale"
+msgstr ""
+
+#: edit.js
+msgid "Height"
+msgstr ""
+
+#: edit.js
+msgid "Navigator"
+msgstr ""
+
+#: edit.js
+msgid "Default"
+msgstr ""
+
+#: edit.js
+msgid "Left"
+msgstr ""
+
+#: edit.js
+msgid "Right"
+msgstr ""
+
+#: edit.js
+msgid "Front"
+msgstr ""
+
+#: edit.js
+msgid "Back"
+msgstr ""
+
+#: edit.js
+msgid "Top"
+msgstr ""
+
+#: edit.js
+msgid "Bottom"
+msgstr ""
+
+#: edit.js
+msgid "Deg"
+msgstr ""
+
+#: edit.js
+msgid "Enable Helpers"
+msgstr ""
+
+#: edit.js
+msgid "Helpers"
+msgstr ""
+
+#: edit.js
+msgid "These options are only visible in the editor"
+msgstr ""
+
+#: edit.js
+msgid "Floor"
+msgstr ""
+
+#: edit.js
+msgid "Center"
+msgstr ""
+
+#: edit.js
+msgid "Spot Light"
+msgstr ""
+
+#: edit.js
+msgid "Left Light"
+msgstr ""
+
+#: edit.js
+msgid "Right Light"
+msgstr ""
+
+#: edit.js
+msgid "Target on DubleClick"
+msgstr ""
+
+#: edit.js
+msgid "Scroll on Rotation"
+msgstr ""
+
+#: edit.js
+msgid "Device Orientation"
+msgstr ""
+
+#: edit.js
+msgid "Latitude, Longitude"
+msgstr ""
+
+#: edit.js
+msgid "Custom Panorama Image"
+msgstr ""
+
+#: edit.js
+msgid "Show Chrome Sphere"
+msgstr ""

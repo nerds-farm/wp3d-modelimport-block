@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'wp3d';
+  src: url('../font/wp3d.eot?91356438');
+  src: url('../font/wp3d.eot?91356438#iefix') format('embedded-opentype'),
+       url('../font/wp3d.woff2?91356438') format('woff2'),
+       url('../font/wp3d.woff?91356438') format('woff'),
+       url('../font/wp3d.ttf?91356438') format('truetype'),
+       url('../font/wp3d.svg?91356438#wp3d') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'wp3d';
+    src: url('../font/wp3d.svg?91356438#wp3d') format('svg');
+  }
+}
+*/
+[class$="-wp3d"]:before, [class*="-wp3d "]:before {
+  font-family: "wp3d";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+
+  text-align: center;
+  vertical-align: top;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.block-editor-block-types-list__item [class$="-wp3d"], .block-editor-block-types-list__item [class*="-wp3d"] {
+  font-size: 2.2em;
+  justify-content: center;
+  display: flex;
+}
+.ic-wp3d{
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.dashicons-wp3d-wp3d:before { content: '\e800'; } /* '' */
+.dashicons-light-wp3d:before { content: '\e801'; } /* '' */
+.dashicons-object-wp3d:before { content: '\e802'; } /* '' */
+.dashicons-mesh-wp3d:before { content: '\e803'; } /* '' */
+.dashicons-particles-wp3d:before { content: '\e804'; } /* '' */
+.dashicons-plane-wp3d:before { content: '\e805'; } /* '' */
+.dashicons-scene-wp3d:before { content: '\e806'; } /* '' */
+.dashicons-postprocessing-wp3d:before { content: '\e807'; } /* '' */
+.dashicons-logo-nerdsfarm-wp3d:before { content: '\e808'; } /* '' */
+.dashicons-points-wp3d:before { content: '\e809'; } /* '' */
+.dashicons-actions-wp3d:before { content: '\e80a'; } /* '' */
+.dashicons-alpha-wp3d:before { content: '\e80b'; } /* '' */
+.dashicons-position-wp3d:before { content: '\e80c'; } /* '' */
+.dashicons-shader-wp3d:before { content: '\e80d'; } /* '' */
+.dashicons-typography-wp3d:before { content: '\e80e'; } /* '' */
+.dashicons-vr-wp3d:before { content: '\e80f'; } /* '' */
+.dashicons-anbient-wp3d:before { content: '\e810'; } /* '' */
+.dashicons-depth-focus-wp3d:before { content: '\e811'; } /* '' */
+.dashicons-rotate-wp3d:before { content: '\e812'; } /* '' */
+.dashicons-scale-wp3d:before { content: '\e813'; } /* '' */
+.dashicons-group-wp3d:before { content: '\e814'; } /* '' */
+.dashicons-street-wp3d:before { content: '\e815'; } /* '' */
+.dashicons-earth-wp3d:before { content: '\e816'; } /* '' */
+.dashicons-street-1-wp3d:before { content: '\e817'; } /* '' */
+.dashicons-point-wp3d:before { content: '\e818'; } /* '' */
+.dashicons-sticker-wp3d:before { content: '\e819'; } /* '' */
+.dashicons-modelimport-wp3d:before { content: '\e81a'; } /* '' */
+.dashicons-svgextrusion-wp3d:before { content: '\e81b'; } /* '' */
+.dashicons-contactshadow-wp3d:before { content: '\e821'; } /* '' */
+.dashicons-transform1-wp3d:before { content: '\e823'; } /* '' */
+.dashicons-shadows-wp3d:before { content: '\e824'; } /* '' */
+.dashicons-sky-wp3d:before { content: '\e825'; } /* '' */
+.dashicons-mousewheel-wp3d:before { content: '\e826'; } /* '' */
+.dashicons-transform-wp3d:before { content: '\e827'; } /* '' */
+.dashicons-cursormove-wp3d:before { content: '\e828'; } /* '' */
+.dashicons-controls-wp3d:before { content: '\e82a'; } /* '' */
+.dashicons-deviceorientation-wp3d:before { content: '\e82b'; } /* '' */
+.dashicons-ar-wp3d:before { content: '\e82c'; } /* '' */
+.dashicon-lightpoint-wp3d:before { content: '\e82d'; } /* '' */
+.dashicon-lightdirectional-wp3d:before { content: '\e81c'; } /* '' */
+.dashicon-lightspot-wp3d:before { content: '\e829'; } /* '' */

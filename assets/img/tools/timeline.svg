@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:17;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-width:17;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:17;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<title>mapcontrol</title>
+<g>
+	<g>
+		<line class="st0" x1="93.2" y1="156.9" x2="400.1" y2="156.9"/>
+		<circle class="st1" cx="97.9" cy="156.9" r="27.9"/>
+		<circle class="st1" cx="400.1" cy="156.9" r="27.9"/>
+	</g>
+	<g>
+		<line class="st0" x1="93.2" y1="249.9" x2="400.1" y2="249.9"/>
+		<circle class="st2" cx="218.8" cy="249.9" r="27.9"/>
+		<circle class="st1" cx="400.1" cy="249.9" r="27.9"/>
+	</g>
+	<g>
+		<line class="st0" x1="93.2" y1="342.9" x2="400.1" y2="342.9"/>
+		<circle class="st1" cx="97.9" cy="342.9" r="27.9"/>
+		<circle class="st1" cx="323.4" cy="342.9" r="27.9"/>
+	</g>
+</g>
+</svg>

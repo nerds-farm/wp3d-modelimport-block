@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1D1D1B;stroke-width:22;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1D1D1B;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<title>mapcontrol</title>
+<g>
+	<path class="st0" d="M250,236.2"/>
+	<path class="st0" d="M248.4,236.2"/>
+	<path class="st0" d="M248.4,236.2"/>
+	<polyline class="st0" points="113,323.5 113,243 113,160.3 250,94.6 387,160.3 387,160.4 387,323.6 	"/>
+	<line class="st0" x1="250" y1="193.4" x2="250" y2="94.6"/>
+	<polyline class="st0" points="317.9,289 387,323.6 387,323.6 248.4,405.4 113,323.5 179.2,290.4 	"/>
+</g>
+<line class="st1" x1="226.3" y1="264.8" x2="273.7" y2="264.8"/>
+<line class="st1" x1="250" y1="241" x2="250" y2="288.5"/>
+</svg>

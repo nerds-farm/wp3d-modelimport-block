@@ -1,0 +1,432 @@
+{
+  "translation-revision-date": "2024-04-10 09:10+0000",
+  "generator": "WP-CLI/2.9.0",
+  "source": "ViewportPanel.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "it_IT",
+        "plural-forms": "nplurals=2; plural=n != 1;"
+      },
+      "Add rel = nofollow": [
+        "Abilita rel = nofollow"
+      ],
+      "Address": [
+        "Indirizzo"
+      ],
+      "Button": [
+        "Bottone"
+      ],
+      "Content": [
+        "Contenuto"
+      ],
+      "copy the coordinates and paste the two values of Latitude, Longitude.": [
+        "copia le coordinate e incolla i due valori di Latitudine, Longitudine."
+      ],
+      "Description": [
+        "Descrizione"
+      ],
+      "Generate Lat/Lng": [
+        "Genera Lat/Lng"
+      ],
+      "Image": [
+        "Immagine"
+      ],
+      "Label": [
+        "Etichetta"
+      ],
+      "Latitude": [
+        "Latitudine"
+      ],
+      "Longitude": [
+        "Longitudine"
+      ],
+      "Open in new tab": [
+        "Apri in nuova scheda"
+      ],
+      "To obtain the coordinates, right-click on the site": [
+        "Per ottenere le coordinate, fai clic con il pulsante destro del mouse sul sito"
+      ],
+      "Add Clouds": [
+        "Aggiungi Nuvole"
+      ],
+      "Add Point": [
+        "Aggiungi Punto"
+      ],
+      "Ambient Light Intensity": [
+        "Intensità Luce Ambiente"
+      ],
+      "Animation Mixer": [
+        "Animazioni Mixer"
+      ],
+      "Autorotate": [
+        "RotazioneAutomaitca"
+      ],
+      "AutoScale": [
+        "ScalaAutomatica"
+      ],
+      "Back": [
+        "Dietro"
+      ],
+      "Background": [
+        "Sfondo"
+      ],
+      "Blur X": [
+        "Sfocatura X"
+      ],
+      "Blur Y": [
+        "Sfocatura Y"
+      ],
+      "Bottom": [
+        "Sotto"
+      ],
+      "Camera": [
+        "Telecamera"
+      ],
+      "Camera Position": [
+        "Posizioni Camera"
+      ],
+      "Camera Target": [
+        "Cenetro Camera"
+      ],
+      "CastShadow": [
+        "ProiettaOmbre"
+      ],
+      "Center": [
+        "Centro"
+      ],
+      "Choose an 3D": [
+        "Seleziona un Modello3D"
+      ],
+      "Circle": [
+        "Cerchio"
+      ],
+      "Colors": [
+        "Colori"
+      ],
+      "Contact Shadow": [
+        "Ombra di Contatto"
+      ],
+      "Custom Panorama Image": [
+        "Immagine Panorama Personalizzata"
+      ],
+      "Damping": [
+        "Smorzamento"
+      ],
+      "Damping Factor": [
+        "Fattore di Smorzamento"
+      ],
+      "Darkness": [
+        "Ombreggiature"
+      ],
+      "Default": [
+        "Predefinita"
+      ],
+      "Deg": [
+        "Gradi"
+      ],
+      "Device Orientation": [
+        "Orientamento Dispositivo"
+      ],
+      "Dimension": [
+        "Dimensione"
+      ],
+      "Display Number": [
+        "Visualizza Numero"
+      ],
+      "Earth Color": [
+        "Colore mondo"
+      ],
+      "Earth3D": [
+        "Mondo3D"
+      ],
+      "Enable Contact Shadow": [
+        "Abilita Ombra di Contatto"
+      ],
+      "Enable Helpers": [
+        "Abilita Aiuti"
+      ],
+      "Enable Left Light": [
+        "Abilita Luce Sinistra"
+      ],
+      "Enable Right Light": [
+        "Abilita Luce Destra"
+      ],
+      "Enable Transform": [
+        "Abilita Trasformazione"
+      ],
+      "Enter some text": [
+        "Scrivi del testo"
+      ],
+      "Exposure": [
+        "Esposizione"
+      ],
+      "External URL": [
+        "URL Esterna"
+      ],
+      "File Name": [
+        "Nome File"
+      ],
+      "Floor": [
+        "Pavimento"
+      ],
+      "Folder URL": [
+        "URL della Cartella"
+      ],
+      "Format Type": [
+        "Tipo di Formato"
+      ],
+      "Fov": [
+        "Focale"
+      ],
+      "Front": [
+        "Frontale"
+      ],
+      "Hearth": [
+        "Cuore"
+      ],
+      "Height": [
+        "Altezza"
+      ],
+      "Helpers": [
+        "Aiuti"
+      ],
+      "Import File 3D": [
+        "Importa File 3D"
+      ],
+      "import mode": [
+        "Modo di importazione"
+      ],
+      "IMPORTANT: Select the format of the model you are importing.": [
+        "IMPORTANTE: seleziona il formato del modello che stai importando."
+      ],
+      "Index Animation": [
+        "Indice dell'animazione"
+      ],
+      "Interactivity": [
+        "Interattività"
+      ],
+      "Latitude, Longitude": [
+        "Latitudine, Longitudine"
+      ],
+      "Left": [
+        "Sinistra"
+      ],
+      "Left Light": [
+        "Luce Sinistra"
+      ],
+      "Left Light Intensity": [
+        "Intensità Luce Sinistra"
+      ],
+      "Light": [
+        "Luce"
+      ],
+      "Light Intensity": [
+        "Intensità luce"
+      ],
+      "Media File": [
+        "File da Media"
+      ],
+      "Modal": [
+        "Modale"
+      ],
+      "Modal BG": [
+        "Sfondo Modale"
+      ],
+      "Modal Quit": [
+        "Chiudi Modale"
+      ],
+      "Model3D Import": [
+        "Modale3D Importazione"
+      ],
+      "Move Cloud": [
+        "Muovi Nuvole"
+      ],
+      "Navigator": [
+        "Navigatore"
+      ],
+      "Number": [
+        "Numero"
+      ],
+      "Opacity": [
+        "Opacità"
+      ],
+      "Options": [
+        "Opzioni"
+      ],
+      "Output Encoding": [
+        "Codifica di Output"
+      ],
+      "Point": [
+        "Punto"
+      ],
+      "Points": [
+        "Punti"
+      ],
+      "Radius": [
+        "Raggio"
+      ],
+      "ReceiveShadow": [
+        "Ricevi Ombre"
+      ],
+      "Remove": [
+        "Cancella"
+      ],
+      "Remove image": [
+        "Rimuovi"
+      ],
+      "Render": [
+        "Rendering"
+      ],
+      "Replace": [
+        "Sostituisci"
+      ],
+      "Replace image": [
+        "Sostituisci"
+      ],
+      "Reset position": [
+        "Ripristina Posizione"
+      ],
+      "Reset Rotation": [
+        "Ripristina Rotazione"
+      ],
+      "Right": [
+        "Destra"
+      ],
+      "Right Light": [
+        "Luce Destra"
+      ],
+      "Right Light Intensity": [
+        "Intensità Luce Destra"
+      ],
+      "Rotation": [
+        "Rotazione"
+      ],
+      "Scale": [
+        "Scala"
+      ],
+      "Scroll on Rotation": [
+        "Rotazione allo Scroll"
+      ],
+      "Select shape": [
+        "Seleziona forma"
+      ],
+      "Sensibility": [
+        "Sensibilità"
+      ],
+      "Shadows": [
+        "Ombre"
+      ],
+      "Show Chrome Sphere": [
+        "Mostra la sfera cromata"
+      ],
+      "Size": [
+        "Dimensione"
+      ],
+      "Speed": [
+        "Velocità"
+      ],
+      "Spot Light": [
+        "Luce Spot"
+      ],
+      "Spot Light Intensity": [
+        "Intensità Luce Spot"
+      ],
+      "Square": [
+        "Quadrato"
+      ],
+      "Stroke": [
+        "Traccia"
+      ],
+      "Target on DubleClick": [
+        "Puntamento al DoppioClick"
+      ],
+      "Terrain color": [
+        "Colore terreno"
+      ],
+      "Text": [
+        "Testo"
+      ],
+      "Texture": [
+        "Texture"
+      ],
+      "Texture Image": [
+        "Immagine di texture"
+      ],
+      "The file name. (without extension)": [
+        "Il nome del file. (senza estensione)"
+      ],
+      "These options are only visible in the editor": [
+        "Queste opzioni sono visibili solo nell'editor"
+      ],
+      "Title": [
+        "Titolo"
+      ],
+      "To Floor": [
+        "Appoggia al Pavimento"
+      ],
+      "Tone Mapping": [
+        "Mappa Tono"
+      ],
+      "Top": [
+        "Sopra"
+      ],
+      "Transform": [
+        "Trasforma"
+      ],
+      "Type": [
+        "Tipo"
+      ],
+      "Upload Model File": [
+        "Importa File Modello"
+      ],
+      "Use Bump": [
+        "Usa Rilievo"
+      ],
+      "Use Displacement": [
+        "Usa Spostamento"
+      ],
+      "Water color": [
+        "Colore Acqua"
+      ],
+      "Zoom": [
+        "Zoom"
+      ],
+      "Zoom on Wheel": [
+        "Zoom con rotella"
+      ],
+      "Choose an image": [
+        "Scegli un'immagine"
+      ],
+      "Environment": [
+        "Riflessione"
+      ],
+      "Metalness": [
+        "Metallizza"
+      ],
+      "Roughness": [
+        "Rugosità"
+      ],
+      "Stars": [
+        "Stelle"
+      ],
+      "Transparent": [
+        "Trasparente"
+      ],
+      "Custom": [
+        "Personalizzato"
+      ],
+      "Fixed": [
+        "Fissa"
+      ],
+      "Ratio": [
+        "Rapporto"
+      ],
+      "This option forces this block to remain fixed in fullscreen below everything.": [
+        "Questa opzione forza questo blocco a rimanere fisso a schermo intero sotto ogni cosa."
+      ]
+    }
+  }
+}
