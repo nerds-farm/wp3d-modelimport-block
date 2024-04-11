@@ -22,16 +22,25 @@ Lightweight and fast: doesn't slow down your website.
 Customizable: Change the appearance of the 3D viewer with advanced options.
 
 = Features = 
-
+* Import from Media Library or external URL
+* Formats supported GLB, GLTF, OBJ, FBX, STL, DAE
+* Automatic scale.
+* Rendering tone mapping.
+* Save camera positions in realtime
+* Transform Model.
 * 3D model rotation and zoom.
-* Fullscreen mode.
-* Light and shadow mode.
-* Transparent background.
 * Rotation speed control.
+* Fullscreen mode.
+* Light and shadow controls.
+* Contast Shadow.
+* Sky Transparent/Color/Image background.
+* Enviroinment image.
 * Preview options.
+* Navigator.
+* Helpers in editor.
+
 
 = Benefits =
-
 Improves the user experience of your website.
 Increases visitor engagement.
 Presents your products in an innovative way.
