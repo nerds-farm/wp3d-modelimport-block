@@ -146,10 +146,6 @@
       "type": "number",
       "default": 1
     },
-    "camera_type": {
-      "type": "string",
-      "default": "perspective"
-    },
     "camera_fov": {
       "type": "number",
       "default": 40

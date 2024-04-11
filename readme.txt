@@ -76,5 +76,5 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 2. This is the second screen shot
 
 == Changelog ==
-= 1.0.0 =
-* ModelImport3D for Gutenberg
+= 0.9.0 =
+* Model Import 3D for Gutenberg Block
