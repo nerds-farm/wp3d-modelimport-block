@@ -4,6 +4,7 @@ namespace WP3D;
 
 class Plugin {
 
+    
     //https://3dviewer.net/info/index.html#supported_file_formats
     public static $mimes = [
         'stl' => 'application/octet-stream',
@@ -14,6 +15,7 @@ class Plugin {
         'zip' => 'application/zip',
         'usdz' => 'model/vnd.usdz+zip',
         'mp4' => 'video/mp4',
+        
         'ttf' => 'application/x-font-ttf', // font
         'dae' => 'model/dae',
         'fbx' => 'model/fbx',
@@ -57,6 +59,7 @@ class Plugin {
         'json' => 'application/json'
     ];
 
+    
     /**
      * Instance.
      *
@@ -79,14 +82,10 @@ class Plugin {
      */
     public function __construct() {
 
-        //$plugin_class_name = get_class($this);
-        //require_once(WP3D_MODELIMPORT_PLUGIN_DIR . 'core' . DIRECTORY_SEPARATOR . 'helper.php');
-
-        $this->setup_hooks();
+	$this->setup_hooks();
 
         $this->handle_import_file();
 
-        //$this->licenses_manager = new License();
     }
 
     /**
