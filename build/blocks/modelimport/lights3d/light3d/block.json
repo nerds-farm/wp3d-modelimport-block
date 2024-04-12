@@ -1,0 +1,110 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wp3d/model-light3d",
+  "version": "0.1.0",
+  "title": "Light",
+  "category": "wp3d-blocks",
+  "icon": "light-wp3d",
+  "description": "",
+  "attributes": {
+    "ide": {
+      "type": "string",
+      "default": "wp3d-light3d-0"
+    },
+    "light_type": {
+      "type": "string",
+      "default": "pointLight"
+    },
+    "light_color": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "light_intensity": {
+      "type": "number",
+      "default": 1
+    },
+    "light_decay": {
+      "type": "number",
+      "default": 1
+    },
+    "light_penumbra": {
+      "type": "number",
+      "default": 0.5
+    },
+    "light_angle": {
+      "type": "number",
+      "default": 3
+    },
+    "light_distance": {
+      "type": "number",
+      "default": 0
+    },
+    "lightpoint_fly": {
+      "type": "boolean",
+      "default": false
+    },
+    "geometry_light_posx": {
+      "type": "number",
+      "default": -2
+    },
+    "geometry_light_posy": {
+      "type": "number",
+      "default": 0
+    },
+    "geometry_light_posz": {
+      "type": "number",
+      "default": 0
+    },
+    "geometry_light_targetx": {
+      "type": "number",
+      "default": 0
+    },
+    "geometry_light_targety": {
+      "type": "number",
+      "default": 0
+    },
+    "geometry_light_targetz": {
+      "type": "number",
+      "default": 0
+    },
+    "light_map": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "url": "",
+        "alt": "",
+        "title": ""
+      }
+    },
+    "geometry_shadow_focus": {
+      "type": "number",
+      "default": 1
+    },
+    "enable_shadows": {
+      "type": "boolean",
+      "default": false
+    },
+    "geometry_shadow_radius": {
+      "type": "number",
+      "default": 4
+    },
+    "geometry_shadow_blurSamples": {
+      "type": "number",
+      "default": 8
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "parent": [
+    "wp3d/model-lights3d"
+  ],
+  "textdomain": "wp3d-modelimport",
+  "editorScript": [
+    "file:./index.js",
+    "jquery"
+  ],
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
