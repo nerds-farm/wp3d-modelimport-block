@@ -215,12 +215,11 @@ class Plugin {
 
                         list($pre, $folder) = explode('uploads', $file_info['dirname'], 2);
                         $folder = str_replace(DIRECTORY_SEPARATOR, '/', $folder);
-                        echo $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
-                        die();
+                        $url = $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
                     }
                 }
 
-                echo $url;
+                echo esc_url($url);
                 die();
             }
         }
@@ -265,8 +264,8 @@ class Plugin {
     }
 
     public function wp3d_register_plugin_libs() {
-        wp_register_script('nprogressbar', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/lib/nprogress/nprogress.js', [], '0.2.0', true);
-        wp_register_style('nprogressbar', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/lib/nprogress/nprogress.css');
+        wp_register_script('nprogressbar', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/lib/nprogress/nprogress.js', [], '0.3.5', true);
+        wp_register_style('nprogressbar', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/lib/nprogress/nprogress.css', [], '0.3.5');
     }
 
     public function admin_enqueue_scripts() {
@@ -277,7 +276,7 @@ class Plugin {
     public function wp3d_modelimport_custom_javascript() {
         ?>
         <script>
-            var wp3d_modelimport_path = "<?php echo WP3D_MODELIMPORT_PLUGIN_URL; ?>";
+            var wp3d_modelimport_path = "<?php echo esc_url(WP3D_MODELIMPORT_PLUGIN_URL); ?>";
         </script>
         <?php
     }

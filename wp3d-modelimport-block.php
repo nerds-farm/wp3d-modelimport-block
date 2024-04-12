@@ -4,8 +4,9 @@
  * Description:       The import of models is allowed from Media Library, Folders and also from CDN. There are many allowed formats. Ideal to display all kinds models. The aim is to combine 3D and Web Design.
  * Requires at least: 6.0
  * Requires PHP:      7.4
- * Version:           0.9.0
+ * Version:           1.0.0
  * Author:            WP3D
+ * Plugin URI:        https://wp3d.site
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wp3d-modelimport
@@ -34,23 +35,28 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-define('WP3D_MODELIMPORT_VERSION', '0.9.0');
-define('WP3D_MODELIMPORT_PLUGIN_DIR', plugin_dir_path(__FILE__));
-define('WP3D_MODELIMPORT_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('WP3D_MODELIMPORT_PLUGIN_FILE', __FILE__);
-define('WP3D_MODELIMPORT_PLUGIN_BASE', plugin_basename(__FILE__));
 
 add_action('init', function () {
-    $loaded = load_plugin_textdomain(
-            'wp3d-modelimport',
-            false,
-            dirname(plugin_basename(__FILE__)) . '/languages'
-    );
+    
+    if (!defined('WP3D_MODELIMPORT_VERSION'))
+        define('WP3D_MODELIMPORT_VERSION', '1.0.0');
+    if (!defined('WP3D_MODELIMPORT_PLUGIN_DIR'))
+        define('WP3D_MODELIMPORT_PLUGIN_DIR', plugin_dir_path(__FILE__));
+    if (!defined('WP3D_MODELIMPORT_PLUGIN_URL'))
+        define('WP3D_MODELIMPORT_PLUGIN_URL', plugin_dir_url(__FILE__));
+    
+    if (!defined('WP3D_MODELIMPORT_PLUGIN_BASE')) {
+        $loaded = load_plugin_textdomain(
+                'wp3d-modelimport',
+                false,
+                dirname(plugin_basename(__FILE__)) . '/languages'
+        );
 
-    register_block_type(__DIR__ . '/build/blocks/modelimport');
+        register_block_type(__DIR__ . '/build/blocks/modelimport');
 
-    $localized = wp_set_script_translations('wp3d-modelimport-editor-script', 'wp3d-modelimport', plugin_dir_path(__FILE__) . 'languages');
+        $localized = wp_set_script_translations('wp3d-modelimport-editor-script', 'wp3d-modelimport', plugin_dir_path(__FILE__) . 'languages');
 
-    include_once(__DIR__ . DIRECTORY_SEPARATOR . 'plugin.php');
-    $wp3d = \WP3D\Plugin::instance();
+        include_once(__DIR__ . DIRECTORY_SEPARATOR . 'plugin.php');
+        $wp3d = \WP3D\Plugin::instance();
+    }
 });

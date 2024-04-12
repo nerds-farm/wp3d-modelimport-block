@@ -1,6 +1,7 @@
 === WP3D Model Import Viewer ===
 Author:            WP3D
 Contributors:      poglie, frapesce
+Donate link:       https://wp3d.site/
 Tags:              block, wp3d, three.js, 3d, model, glb, gltf
 Requires at least: 6.0
 Requires PHP:      7.4
@@ -78,12 +79,12 @@ No, maybe in future, please ask us the specific version.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. ss_importFile3d.png - Easy import any 3D object file via Media Library, it works also with 3D zip folders, or with the URL of the remoted media (using it with CDN)
+2. ss_light.png - Setup the light which give more reality to your 3D Object
+3. ss_sky.png - Adding a background Image, Transparent or a Plain Color will increase the integration with your page with an immersive situation
+4. ss_camera.png - Move your camera to set the best position for your target, zooming and moving for the best fit 
+5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
-= 0.9.0 =
+= 0.1.0 =
 * Model Import 3D for Gutenberg Block
