@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wp3d/model-point3d",
+  "version": "0.1.0",
+  "title": "Point",
+  "category": "wp3d-blocks",
+  "icon": "point-wp3d",
+  "description": "",
+  "attributes": {
+    "_id": {
+      "type": "string",
+      "default": "wp3d-point-0"
+    },
+    "hp_n": {
+      "type": "string",
+      "default": ""
+    },
+    "trigger_id": {
+      "type": "string",
+      "default": ""
+    },
+    "hp_color": {
+      "type": "string",
+      "default": ""
+    },
+    "hp_shape": {
+      "type": "string",
+      "default": ""
+    },
+    "hp_text": {
+      "type": "string",
+      "default": "Point Name"
+    },
+    "hp_description": {
+      "type": "string",
+      "default": "Lorem ipsum ..."
+    },
+    "hp_x": {
+      "type": "number",
+      "default": 0
+    },
+    "hp_y": {
+      "type": "number",
+      "default": 0
+    },
+    "hp_z": {
+      "type": "number",
+      "default": 0
+    },
+    "camera_fov": {
+      "type": "number",
+      "default": 40
+    },
+    "camera_zoom": {
+      "type": "number",
+      "default": 1
+    },
+    "camera_posx": {
+      "type": "number",
+      "default": 0
+    },
+    "camera_posy": {
+      "type": "number",
+      "default": 0
+    },
+    "camera_posz": {
+      "type": "number",
+      "default": 300
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "parent": [
+    "wp3d/model-points3d"
+  ],
+  "textdomain": "wp3d-modelimport",
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

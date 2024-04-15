@@ -55,7 +55,11 @@ add_action('init', function () {
         register_block_type(__DIR__ . '/build/blocks/modelimport');
 
         $localized = wp_set_script_translations('wp3d-modelimport-editor-script', 'wp3d-modelimport', plugin_dir_path(__FILE__) . 'languages');
-
+        wp_localize_script('wp3d-modelimport-editor-script', 'ajax_var', array(
+            'url' => admin_url('admin-ajax.php'),
+            'nonce' => wp_create_nonce('wp3d-nonce')
+        ));
+        
         include_once(__DIR__ . DIRECTORY_SEPARATOR . 'plugin.php');
         $wp3d = \WP3D\Plugin::instance();
     }

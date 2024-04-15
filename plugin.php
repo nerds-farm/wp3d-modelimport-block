@@ -120,12 +120,12 @@ class Plugin {
 
         add_action('wp_enqueue_scripts', [$this, 'wp3d_register_plugin_libs']);
         add_action('enqueue_block_editor_assets', [$this, 'wp3d_register_plugin_libs']);
-        add_action('wp_enqueue_scripts', [$this, 'wp_enqueue_scripts']);
+        //add_action('wp_enqueue_scripts', [$this, 'wp_enqueue_scripts']);
         add_action('admin_enqueue_scripts', [$this, 'admin_enqueue_scripts']);
         add_action('enqueue_block_editor_assets', [$this, 'enqueue_block_editor_assets']);
         add_action('wp_enqueue_scripts', [$this, 'wp3d_modelimport_custom_javascript']);
         add_action('admin_enqueue_scripts', [$this, 'wp3d_modelimport_custom_javascript']);
-        
+        add_action('wp_enqueue_scripts', [$this, 'wp3d_modelimport_load_frontscript'] );
         add_filter('block_categories_all', [$this, 'block_categories_all']);
 
         add_filter('upload_mimes', [$this, 'add_3d_mime_types']);
@@ -288,5 +288,12 @@ class Plugin {
                 'wp3d-modelimport',
                 plugin_dir_path(__FILE__) . 'languages'
         );
+    }
+    public function wp3d_modelimport_load_frontscript() {
+
+        wp_localize_script('wp3d-modelimport-view-script', 'ajax_var', array(
+            'url' => admin_url('admin-ajax.php'),
+            'nonce' => wp_create_nonce('wp3d-nonce')
+        ));
     }
 }
