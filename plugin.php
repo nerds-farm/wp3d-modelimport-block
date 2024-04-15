@@ -269,8 +269,8 @@ class Plugin {
     }
 
     public function admin_enqueue_scripts() {
-        wp_enqueue_style('wp3d-modelimport-icons', WP3D_MODELIMPORT_PLUGIN_URL . '/assets/css/wp3d-icons.css', false, '1.0.0');
-        wp_enqueue_style('wp3d-modelimport-admin', WP3D_MODELIMPORT_PLUGIN_URL . '/assets/css/admin.css', false, '1.0.0');
+        wp_enqueue_style('wp3d-modelimport-icons', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/css/wp3d-icons.css', false, '1.0.0');
+        wp_enqueue_style('wp3d-modelimport-admin', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/css/admin.css', false, '1.0.0');
     }
 
     public function wp3d_modelimport_custom_javascript() {
