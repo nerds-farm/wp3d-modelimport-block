@@ -27,10 +27,9 @@
     barSelector: '[role="bar"]',
     spinnerSelector: '[role="spinner"]',
     parent: 'body',
-    scope: document,
     template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
   };
- 
+
   /**
    * Updates configuration.
    *
@@ -243,10 +242,9 @@
     if (Settings.parent instanceof HTMLElement) {
       return Settings.parent;
     }
-    
+
     if (typeof Settings.parent === 'string') {
-      //console.log(Settings.scope.querySelector(Settings.parent))
-      return Settings.scope.querySelector(Settings.parent);
+      return document.querySelector(Settings.parent);
     }
   }
 
@@ -259,9 +257,9 @@
   NProgress.render = function(fromStart) {
     if (NProgress.isRendered()) return NProgress.getElement();
 
-    addClass(Settings.scope.documentElement, 'nprogress-busy');
+    addClass(document.documentElement, 'nprogress-busy');
 
-    var progress = Settings.scope.createElement('div');
+    var progress = document.createElement('div');
     progress.id = 'nprogress';
     progress.className = 'nprogress';
     progress.innerHTML = Settings.template;
@@ -281,7 +279,7 @@
       spinner && removeElement(spinner);
     }
 
-    if (parent != Settings.scope.body) {
+    if (parent != document.body) {
       addClass(parent, 'nprogress-custom-parent');
     }
 
@@ -295,7 +293,7 @@
 
   NProgress.remove = function() {
     NProgress.status = null;
-    removeClass(Settings.scope.documentElement, 'nprogress-busy');
+    removeClass(document.documentElement, 'nprogress-busy');
     removeClass(NProgress.getParent(), 'nprogress-custom-parent');
     var progress = NProgress.getElement();
     progress && removeElement(progress);
@@ -314,8 +312,8 @@
    */
 
   NProgress.getPositioningCSS = function() {
-    // Sniff on Settings.scope.body.style
-    var bodyStyle = Settings.scope.body.style;
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
 
     // Sniff prefixes
     var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
@@ -415,7 +413,7 @@
     }
 
     function getVendorProp(name) {
-      var style = Settings.scope.body.style;
+      var style = document.body.style;
       if (name in style) return name;
 
       var i = cssPrefixes.length,

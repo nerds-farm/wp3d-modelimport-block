@@ -2,13 +2,13 @@
 .wp-block.wp-block-wp3d-modelimport{
     margin: 0;
 }
-.wp-block .wp3d-trace{
+.wp3d-trace{
     margin: 2px 0;
     font-size: 12px !important;
     display: flex;
     align-items: center;
 }
-.wp-block .wp3d-trace .wp3d-trace-name{
+.wp3d-trace .wp3d-trace-name{
     display: flex;
     align-items: center;
     
@@ -17,9 +17,54 @@
    
     font-size: 9px;
 }
-.wp-block .wp3d-trace .dashicon{
+.wp3d-trace .dashicon{
     padding: 5px;
 }
+
+/* TOOLS TRANSFORM */
+.wp3d-tools-object3d{
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	
+	color: #000;
+	position: absolute;
+	
+	display: none;
+
+  	
+}
+.wp3d-tools-object3d.active{
+	display: block;
+}
+.wp3d-tools-object3d > span{
+	padding: 10px;
+	border-radius: 4px;
+	border: #ccc solid 1px;
+	background-color: #FFF;
+	margin: 3px;
+	display: inline-block;
+	
+	cursor: pointer;
+	background-size: contain;
+	transition: background-color 0.5s ease;
+}
+.wp3d-tools-object3d > span.active{
+	background-color: #ccc;
+}
+.wp3d-tools-object3d-pos{
+	background-image: url('../img/tools/position.svg');
+}
+.wp3d-tools-object3d-rot{
+	background-image: url('../img/tools/rotation.svg');
+}
+.wp3d-tools-object3d-scale{
+	background-image: url('../img/tools/scale.svg');
+}
+
+
+
 
 
 /* Item */
@@ -81,12 +126,17 @@
 .wp3d-address-find .wp3d-btn{
     
 }
+
+
+
 /* BTN */
 .components-button.wp3d-btn{
     background-color: var(--wp-components-color-accent,var(--wp-admin-theme-color,#3858e9));
     color: #FFF;
     margin: -10px 0 10px 0;
 }
+
+
 
 /* Icons Shapes Points */
 .wp3d-icon-type {
@@ -103,10 +153,16 @@
     padding: 0 5px;
 }
 
-/* choose-wp3d */
-.choose-wp3d{
-    margin-bottom: 15px;
+
+
+/* Elementor */
+
+i.panel-icon-heading{
+    position: absolute;
+    right: 20px;
+    font-size: 1.6em;
+    top: 15px;
 }
-.choose-wp3d .editor-post-featured-image__preview{
-    margin-bottom: 10px;
+.elementor-panel-heading{
+    position: relative;
 }

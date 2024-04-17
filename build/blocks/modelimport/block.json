@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 2,
+  "apiVersion": 3,
   "name": "wp3d/modelimport",
   "version": "0.1.0",
   "title": "Model Import",
@@ -369,7 +369,9 @@
     "jquery",
     "nprogressbar"
   ],
-  "editorStyle": "file:./index.css",
+  "editorStyle": [
+    "file:./index.css"
+  ],
   "style": [
     "file:./style-index.css",
     "nprogressbar"
@@ -378,5 +380,6 @@
     "file:./script.js",
     "jquery",
     "nprogressbar"
-  ]
+  ],
+  "render": "file:./render.php"
 }
