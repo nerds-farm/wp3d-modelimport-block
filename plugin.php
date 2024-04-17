@@ -175,52 +175,53 @@ class Plugin {
     protected function handle_import_file() {
 
         if (!empty($_GET['action']) && $_GET['action'] == 'wp3d') {
-
             if (!empty($_GET['url'])) {
-                $url = sanitize_url($_GET['url']);
+                // Check for nonce security      
+                if (wp_verify_nonce($_GET['nonce'], 'wp3d-nonce')) {
+                    $url = sanitize_url($_GET['url']);
 
-                $media_id = attachment_url_to_postid($url);
+                    $media_id = attachment_url_to_postid($url);
 
-                if ($media_id) {
-                    $file_path = get_attached_file($media_id);
-                    $file_path = str_replace('/', DIRECTORY_SEPARATOR, $file_path);
+                    if ($media_id) {
+                        $file_path = get_attached_file($media_id);
+                        $file_path = str_replace('/', DIRECTORY_SEPARATOR, $file_path);
 
-                    if (file_exists($file_path)) {
-                        $file_info = pathinfo($file_path); //[dirname],[basename],[extension],[filename]
-                        $wp_upload_dir = wp_upload_dir();
-                        switch ($file_info['extension']) {
-                            case 'zip':
+                        if (file_exists($file_path)) {
+                            $file_info = pathinfo($file_path); //[dirname],[basename],[extension],[filename]
+                            $wp_upload_dir = wp_upload_dir();
+                            switch ($file_info['extension']) {
+                                case 'zip':
 
-                                $folder_3d = $wp_upload_dir['basedir'] . DIRECTORY_SEPARATOR . 'wp3d' . DIRECTORY_SEPARATOR . $media_id;
-                                $folder_3d = str_replace('/', DIRECTORY_SEPARATOR, $folder_3d);
-                                if (!is_dir($folder_3d)) {
-                                    // extract in /uploads/wp3d/ID
-                                    include_once(ABSPATH . DIRECTORY_SEPARATOR . 'wp-admin' . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'file.php');
-                                    $unzip = unzip_file($file_path, $folder_3d);
-                                    $zip = new \ZipArchive;
-                                    if ($zip->open($file_path) === TRUE) {
-                                        $zip->extractTo($folder_3d);
-                                        $zip->close();
+                                    $folder_3d = $wp_upload_dir['basedir'] . DIRECTORY_SEPARATOR . 'wp3d' . DIRECTORY_SEPARATOR . $media_id;
+                                    $folder_3d = str_replace('/', DIRECTORY_SEPARATOR, $folder_3d);
+                                    if (!is_dir($folder_3d)) {
+                                        // extract in /uploads/wp3d/ID
+                                        include_once(ABSPATH . DIRECTORY_SEPARATOR . 'wp-admin' . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'file.php');
+                                        $unzip = unzip_file($file_path, $folder_3d);
+                                        $zip = new \ZipArchive;
+                                        if ($zip->open($file_path) === TRUE) {
+                                            $zip->extractTo($folder_3d);
+                                            $zip->close();
+                                        }
                                     }
-                                }
-                                // search inside the folder a valid file
-                                $extensions = !empty($_GET['type']) ? $_GET['type'] : Utils::implode(array_filter(array_keys(self::$types)), '|');
-                                $file = $this->rsearch($folder_3d, "/^.*\.(" . $extensions . ")$/");
-                                if (!empty($file)) {
-                                    $file_path = reset($file);
-                                    $file_info = pathinfo($file_path);
-                                }
-                                break;
+                                    // search inside the folder a valid file
+                                    $extensions = !empty($_GET['type']) ? $_GET['type'] : Utils::implode(array_filter(array_keys(self::$types)), '|');
+                                    $file = $this->rsearch($folder_3d, "/^.*\.(" . $extensions . ")$/");
+                                    if (!empty($file)) {
+                                        $file_path = reset($file);
+                                        $file_info = pathinfo($file_path);
+                                    }
+                                    break;
+                            }
+
+                            list($pre, $folder) = explode('uploads', $file_info['dirname'], 2);
+                            $folder = str_replace(DIRECTORY_SEPARATOR, '/', $folder);
+                            $url = $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
                         }
-
-                        list($pre, $folder) = explode('uploads', $file_info['dirname'], 2);
-                        $folder = str_replace(DIRECTORY_SEPARATOR, '/', $folder);
-                        $url = $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
                     }
+                    echo esc_url($url);
+                    die();
                 }
-
-                echo esc_url($url);
-                die();
             }
         }
     }
