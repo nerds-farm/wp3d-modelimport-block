@@ -2,11 +2,11 @@
 Author:            WP3D
 Contributors:      poglie, frapesce
 Donate link:       https://wp3d.site/
-Tags:              block, wp3d, three.js, 3d, model, glb, gltf
+Tags:              three.js, 3d, model, stl, gltf
 Requires at least: 6.0
 Requires PHP:      7.4
 Tested up to:      6.5.3
-Stable tag:        1.0.1
+Stable tag:        1.0.5
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,11 +16,14 @@ Easy and Interactive Gutenberg Block to Showcase 3D Objects in a simple and inst
 
 = Easy 3D Viewer =
 
-Easy to use: Upload your 3D model and the plugin will automatically display it.
-Intuitive interface: Rotate, zoom in and out of the model with your mouse.
-Compatible with various 3D file formats: .obj, .fbx, .glb, .stl, and .dae.
-Lightweight and fast: doesn't slow down your website.
-Customizable: Change the appearance of the 3D viewer with advanced options.
+Welcome to the future of 3D web design with [**WP3D for Wordpress**](https://wp3d.site/)
+Introducing **WP3D Model Import**: Your NEW WordPress Plugin for **3D Model Integration**
+
+* **Easy to use:** Upload your 3D model into the Media Library and the plugin will automatically display it.
+* **Intuitive interface:** Rotate, zoom in and out of the model with your mouse.
+* **Compatible with most 3D file formats:** .obj, .gltf, .fbx, .glb, .stl, and .dae.
+* **Lightweight and fast:** doesn't slow down your website, loading script and assets only when needed.
+* **Customizable:** Change the appearance of the 3D viewer with advanced options in real time.
 
 = Features = 
 * Import from Media Library or external URL
@@ -39,7 +42,7 @@ Customizable: Change the appearance of the 3D viewer with advanced options.
 * Preview options.
 * Navigator.
 * Helpers in editor.
-
+* Many other are yet to come...[follow us](https://wp3d.site/)!
 
 = Benefits =
 Improves the user experience of your website.
@@ -47,6 +50,11 @@ Increases visitor engagement.
 Presents your products in an innovative way.
 Offers a realistic view of your 3D models.
 
+= Set all ThreeJs parameters without writing code =
+We have integrated all the features provided by *the most used 3D library*,
+to bring all the powerful potential of **ThreeJS to Wordpress**
+with simple Gutenberg interface and immediate display of 3D model results on your page.
+You can help us develop and contribute to the [project on GitHub](https://github.com/nerds-farm/wp3d-modelimport-block)!
 
 == Installation ==
 
@@ -86,7 +94,7 @@ No, maybe in future, please ask us the specific version.
 5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
-= 1.0.4 =
+= 1.0.5 =
 * Optimizations
 * LazyLoad Model
 * Introducing camera Phi/Theta/radius
