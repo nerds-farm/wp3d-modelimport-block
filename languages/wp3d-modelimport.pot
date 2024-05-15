@@ -298,6 +298,10 @@ msgid "Colors"
 msgstr ""
 
 #: edit.js
+msgid "Color"
+msgstr ""
+
+#: edit.js
 msgid "Number"
 msgstr ""
 
@@ -536,6 +540,18 @@ msgid "Shadows"
 msgstr ""
 
 #: edit.js
+msgid "Shadow"
+msgstr ""
+
+#: edit.js
+msgid "Light and Shadow"
+msgstr ""
+
+#: edit.js
+msgid "Lights"
+msgstr ""
+
+#: edit.js
 msgid "CastShadow"
 msgstr ""
 
@@ -577,6 +593,10 @@ msgstr ""
 
 #: edit.js
 msgid "Camera Position"
+msgstr ""
+
+#: edit.js
+msgid "Position"
 msgstr ""
 
 #: edit.js
@@ -697,4 +717,136 @@ msgstr ""
 
 #: edit.js
 msgid "Show Chrome Sphere"
+msgstr ""
+
+#: edit.js
+msgid "Near"
+msgstr ""
+
+#: edit.js
+msgid "Far"
+msgstr ""
+
+#: edit.js
+msgid "Density"
+msgstr ""
+
+#: edit.js
+msgid "Enable Fog"
+msgstr ""
+
+#: edit.js
+msgid "Fog"
+msgstr ""
+
+#: edit.js
+msgid "Enable Floor"
+msgstr ""
+
+#: edit.js
+msgid "Horizon"
+msgstr ""
+
+#: edit.js
+msgid "Wall"
+msgstr ""
+
+#: edit.js
+msgid "Room"
+msgstr ""
+
+#: edit.js
+msgid "Sphere"
+msgstr ""
+
+#: edit.js
+msgid "Stage 2"
+msgstr ""
+
+#: edit.js
+msgid "Stage 3"
+msgstr ""
+
+#: edit.js
+msgid "Stage 4"
+msgstr ""
+
+#: edit.js
+msgid "Texture Repeatition"
+msgstr ""
+
+#: edit.js
+msgid "Light Map"
+msgstr ""
+
+#: edit.js
+msgid "Map Image"
+msgstr ""
+
+#: edit.js
+msgid "Focus"
+msgstr ""
+
+#: edit.js
+msgid "Enable Shadows"
+msgstr ""
+
+#: edit.js
+msgid "Radius"
+msgstr ""
+
+#: edit.js
+msgid "Flying Point"
+msgstr ""
+
+#: edit.js
+msgid "Penumbra"
+msgstr ""
+
+#: edit.js
+msgid "Angle"
+msgstr ""
+
+#: edit.js
+msgid "Distance"
+msgstr ""
+
+#: edit.js
+msgid "Decay"
+msgstr ""
+
+#: edit.js
+msgid "Intensity"
+msgstr ""
+
+#: edit.js
+msgid "Light Color"
+msgstr ""
+
+#: edit.js
+msgid "Light Type"
+msgstr ""
+
+#: edit.js
+msgid "Point"
+msgstr ""
+
+#: edit.js
+msgid "Directional"
+msgstr ""
+
+#: edit.js
+msgid "Spot"
+msgstr ""
+
+#: edit.js
+msgid "Point Light"
+msgstr ""
+
+#: edit.js
+msgid "Directional Light"
+msgstr ""
+
+#: edit.js
+msgid "Spot Light"
 msgstr ""

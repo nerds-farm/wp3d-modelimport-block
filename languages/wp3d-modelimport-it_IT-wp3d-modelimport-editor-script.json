@@ -1,5 +1,5 @@
 {
-  "translation-revision-date": "2024-04-10 09:10+0000",
+  "translation-revision-date": "2024-04-23 17:27+0000",
   "generator": "WP-CLI/2.9.0",
   "source": "ViewportPanel.js",
   "domain": "messages",
@@ -58,6 +58,9 @@
       "Ambient Light Intensity": [
         "Intensità Luce Ambiente"
       ],
+      "Angle": [
+        "Angolo"
+      ],
       "Animation Mixer": [
         "Animazioni Mixer"
       ],
@@ -88,11 +91,14 @@
       "Camera Position": [
         "Posizioni Camera"
       ],
+      "Position": [
+        "Posizione"
+      ],
       "Camera Target": [
         "Centratura Camera"
       ],
       "CastShadow": [
-        "Proietta Ombre"
+        "ProiettaOmbre"
       ],
       "Center": [
         "Centro"
@@ -102,6 +108,9 @@
       ],
       "Circle": [
         "Cerchio"
+      ],
+      "Color": [
+        "Colore"
       ],
       "Colors": [
         "Colori"
@@ -121,11 +130,17 @@
       "Darkness": [
         "Ombreggiature"
       ],
+      "Decay": [
+        "Decadenza"
+      ],
       "Default": [
         "Predefinita"
       ],
       "Deg": [
         "Gradi"
+      ],
+      "Density": [
+        "Densità"
       ],
       "Device Orientation": [
         "Orientamento Dispositivo"
@@ -133,8 +148,17 @@
       "Dimension": [
         "Dimensione"
       ],
+      "Directional": [
+        "Direzionale"
+      ],
+      "Directional Light": [
+        "Luce Direzionale"
+      ],
       "Display Number": [
         "Visualizza Numero"
+      ],
+      "Distance": [
+        "Distanza"
       ],
       "Earth Color": [
         "Colore mondo"
@@ -145,6 +169,12 @@
       "Enable Contact Shadow": [
         "Abilita Ombra di Contatto"
       ],
+      "Enable Floor": [
+        "Abilita Pavimento"
+      ],
+      "Enable Fog": [
+        "Abilita Nebbia"
+      ],
       "Enable Helpers": [
         "Abilita Aiuti"
       ],
@@ -153,6 +183,9 @@
       ],
       "Enable Right Light": [
         "Abilita Luce Destra"
+      ],
+      "Enable Shadows": [
+        "Abilita Ombre"
       ],
       "Enable Transform": [
         "Abilita Trasformazione"
@@ -166,11 +199,23 @@
       "External URL": [
         "URL Esterna"
       ],
+      "Far": [
+        "Lontano"
+      ],
       "File Name": [
         "Nome File"
       ],
       "Floor": [
         "Pavimento"
+      ],
+      "Flying Point": [
+        "Luci Volanti"
+      ],
+      "Focus": [
+        "Inquadratura"
+      ],
+      "Fog": [
+        "Nebbia"
       ],
       "Folder URL": [
         "URL della Cartella"
@@ -193,6 +238,9 @@
       "Helpers": [
         "Aiuti"
       ],
+      "Horizon": [
+        "Orizzonte"
+      ],
       "Import File 3D": [
         "Importa File 3D"
       ],
@@ -204,6 +252,9 @@
       ],
       "Index Animation": [
         "Indice dell'animazione"
+      ],
+      "Intensity": [
+        "Intensità"
       ],
       "Interactivity": [
         "Interattività"
@@ -223,8 +274,26 @@
       "Light": [
         "Luce"
       ],
+      "Light and Shadow": [
+        "Luce e Ombra"
+      ],
+      "Light Color": [
+        "Colore Luce"
+      ],
       "Light Intensity": [
         "Intensità luce"
+      ],
+      "Light Map": [
+        "Mappa Immagine"
+      ],
+      "Light Type": [
+        "Tipo di Luce"
+      ],
+      "Lights": [
+        "Luci"
+      ],
+      "Map Image": [
+        "Mappa Immagine"
       ],
       "Media File": [
         "File da Media"
@@ -247,6 +316,9 @@
       "Navigator": [
         "Navigatore"
       ],
+      "Near": [
+        "Vicino"
+      ],
       "Number": [
         "Numero"
       ],
@@ -259,8 +331,14 @@
       "Output Encoding": [
         "Codifica di Output"
       ],
+      "Penumbra": [
+        "Penombra"
+      ],
       "Point": [
         "Punto"
+      ],
+      "Point Light": [
+        "Luce Punto"
       ],
       "Points": [
         "Punti"
@@ -301,6 +379,9 @@
       "Right Light Intensity": [
         "Intensità Luce Destra"
       ],
+      "Room": [
+        "Stanza"
+      ],
       "Rotation": [
         "Rotazione"
       ],
@@ -319,6 +400,9 @@
       "Shadows": [
         "Ombre"
       ],
+      "Shadow": [
+        "Ombra"
+      ],
       "Show Chrome Sphere": [
         "Mostra la sfera cromata"
       ],
@@ -327,6 +411,12 @@
       ],
       "Speed": [
         "Velocità"
+      ],
+      "Sphere": [
+        "Sfera"
+      ],
+      "Spot": [
+        "Spot"
       ],
       "Spot Light": [
         "Luce Spot"
@@ -337,11 +427,20 @@
       "Square": [
         "Quadrato"
       ],
+      "Stage 2": [
+        "Palcoscenico 2"
+      ],
+      "Stage 3": [
+        "Palcoscenico 3"
+      ],
+      "Stage 4": [
+        "Palcoscenico 4"
+      ],
       "Stroke": [
         "Traccia"
       ],
       "Target on DubleClick": [
-        "Puntamento al Doppio Click"
+        "Puntamento al DoppioClick"
       ],
       "Terrain color": [
         "Colore terreno"
@@ -354,6 +453,9 @@
       ],
       "Texture Image": [
         "Immagine di texture"
+      ],
+      "Texture Repeatition": [
+        "Ripetizione Texture"
       ],
       "The file name. (without extension)": [
         "Il nome del file. (senza estensione)"
@@ -387,6 +489,9 @@
       ],
       "Use Displacement": [
         "Usa Spostamento"
+      ],
+      "Wall": [
+        "Muro"
       ],
       "Water color": [
         "Colore Acqua"

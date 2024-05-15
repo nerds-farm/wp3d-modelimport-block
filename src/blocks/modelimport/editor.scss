@@ -1,0 +1,114 @@
+canvas.threed-canvas{
+	outline: 1px dashed #ccc;
+}
+
+.components-panel-col{
+    flex-flow: column;
+    padding: 10px 0;
+}
+.panelbody-heading{
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 15px -15px !important;
+}
+/* XXXX */
+.wp-block-wp3d-modelimport{
+	overflow: visible;
+	max-width: 100%;
+}
+.wp3d-modelimport-block_selector{
+	background-color: #444;
+	color: #FFF;
+	padding: 18px;
+	position: absolute;
+	left: calc(100% - 20px);
+	top: 20px;
+	z-index: 1;
+	line-height: 0;
+	border-radius: 7px;
+	transform: translateX(-100%);
+	border: 2px solid #FFF;
+}
+.wp3d-modelimport-block_selector.wp3d-modelimport-block_selector-points,
+.wp3d-modelimport-block_selector.wp3d-modelimport-block_selector-lights{
+	top: 100px;
+	display: none;
+}
+.wp3d-modelimport-block_selector.wp3d-modelimport-block_selector-points.open,
+.wp3d-modelimport-block_selector.wp3d-modelimport-block_selector-lights.open{
+	display: block;
+}
+.wp3d-modelimport-block_selector:hover{
+	cursor: pointer;
+	background-color: var(--wp-components-color-accent-darker-10,var(--wp-admin-theme-color-darker-10,#2145e6));
+}
+
+
+/* choose-wp3d */
+.choose-wp3d{
+    margin-bottom: 15px;
+}
+.choose-wp3d .editor-post-featured-image__preview{
+    margin-bottom: 10px;
+}
+
+
+// TABS
+.wp3d-tab-panel .components-tab-panel__tabs .wp3d-tab.active-tab{
+	background-color: #f5f5f5;
+	border-bottom: 4px solid #000000;
+}
+.wp3d-tab-panel .components-tab-panel__tab-content {
+	
+}
+.wp3d-tab-panel .components-tab-panel__tab-content .wp3d-tab{
+
+}
+
+// PANEL
+.wp-block-wp3d-modelimport .wp-block-wp3d-model-points3d,
+.wp-block-wp3d-modelimport .wp-block-wp3d-model-lights3d{
+
+}
+.wp-block-wp3d-modelimport .wp3d-points3d-itempoints, .wp-block-wp3d-modelimport .wp3d-lights3d-itemlights{
+	display: none;
+}
+
+.wp3d-modelimport-list-panel{
+	padding: 15px;
+}
+.wp3d-modelimport-list-panel .wp3d-points-list,
+.wp3d-modelimport-list-panel .wp3d-lights-list,
+.wp3d-modelimport-list-panel .wp3d-modelimport-block_selector{
+	display: none;
+}
+.wp3d-modelimport-list-panel .wp-block .wp3d-trace .wp3d-trace-name {
+	background-color: #000;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #FFF;
+	border-radius: 5px;
+}
+.wp3d-lights-list-panel .wp-block .wp3d-trace .wp3d-trace-name .dashicon,
+.wp3d-points-list-panel .wp-block .wp3d-trace .wp3d-trace-name .dashicon,
+.wp3d-modelimport-list-panel .wp-block .wp3d-trace .wp3d-trace-name .dashicon{
+	display: flex;
+	align-items: center;
+	height: 20px;
+	margin: 0 10px 0 0;
+}
+.wp3d-lights-list-panel .wp-block .wp3d-trace .wp3d-trace-name,
+.wp3d-points-list-panel .wp-block .wp3d-trace .wp3d-trace-name{
+	margin: 0;
+  	padding-right: 6px;
+	white-space: nowrap;
+}
+
+.wp3d-points-list-panel .wp-block .wp3d-trace .wp3d-trace-label{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis ellipsis;
+}

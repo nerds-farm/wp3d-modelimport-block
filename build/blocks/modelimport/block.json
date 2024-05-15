@@ -198,6 +198,18 @@
       "type": "number",
       "default": 0
     },
+    "camera_phi": {
+      "type": "number",
+      "default": 4
+    },
+    "camera_theta": {
+      "type": "number",
+      "default": 0
+    },
+    "camera_radius": {
+      "type": "number",
+      "default": 40
+    },
     "camera_posz": {
       "type": "number",
       "default": 4

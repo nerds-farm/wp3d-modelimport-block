@@ -1,0 +1,124 @@
+/* scene 3D */
+// wp-block-wp3d-scene3d
+
+
+
+canvas.threed-canvas{
+    width: 100% !important;
+  	height: 100% !important;
+}
+
+// BLOCK
+.wp-block-wp3d-modelimport{
+	overflow: hidden;
+	position: relative;
+}
+.wp-block-group:has(.wp-block-wp3d-modelimport) > .wp-block-wp3d-modelimport{
+	width: 100%;
+}
+.wp-block-wp3d-modelimport .wp3d-scene-container{
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+.wp-block-wp3d-modelimport.wp3d-viewport_fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0;
+	z-index: 0;
+	max-width: 100%;
+	width: 100vw;
+	height: 100vh;
+
+}
+.threed-stats > div{
+	position: absolute !important;
+	top: 5px !important;
+	left: 5px !important;
+}
+
+/* TOOLS */
+:root{
+	--wp3d-progress-color: #333333;
+}
+.wp3d-container{
+	position: relative;
+}
+.wp3d-container .wp3d-loading-message{
+	display: none;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 300px;
+	background-color: rgba(0,0,0,0.6);
+	color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.wp-block-wp3d-modelimport{
+	position: relative;
+}
+.wp-block-wp3d-modelimport .wp3d-scene-container{
+	position: relative;
+	display: flex;
+}
+.wp-block-wp3d-modelimport.wp3d-viewport_fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0;
+	z-index: 0;
+	max-width: 100%;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+// NAVIGATOR
+.wp3d-navigator{
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	
+	color: #000;
+	position: absolute;
+	
+	// display: none;
+}
+.wp3d-navigator > span{
+	padding: 15px;
+	border-radius: 4px;
+	border: #ccc solid 1px;
+	background-color: #FFF;
+	margin: 3px;
+	display: inline-block;
+	
+	cursor: pointer;
+	background-size: contain;
+	transition: background-color 0.5s ease;
+}
+.wp3d-navigator .wp3d-nav-left{
+	background-image: url('../../../assets/img/tools/view_left.svg');
+}
+.wp3d-navigator .wp3d-nav-right{
+	background-image: url('../../../assets/img/tools/view_right.svg');
+}
+.wp3d-navigator .wp3d-nav-top{
+	background-image: url('../../../assets/img/tools/view_top.svg');
+}
+.wp3d-navigator .wp3d-nav-bottom{
+	background-image: url('../../../assets/img/tools/view_down.svg');
+}
+.wp3d-navigator .wp3d-nav-front{
+	background-image: url('../../../assets/img/tools/view_front.svg');
+}
+.wp3d-navigator .wp3d-nav-back{
+	background-image: url('../../../assets/img/tools/view_back.svg');
+}
+.wp3d-navigator .wp3d-nav-default{
+	background-image: url('../../../assets/img/tools/reset.svg');
+}

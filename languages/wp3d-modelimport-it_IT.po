@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WP3D ModelImport\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-02 06:40+0000\n"
-"PO-Revision-Date: 2024-04-10 09:10+0000\n"
+"PO-Revision-Date: 2024-04-23 17:27+0000\n"
 "Last-Translator: \n"
 "Language-Team: Italiano\n"
 "MIME-Version: 1.0\n"
@@ -46,6 +46,10 @@ msgstr "Intensità Luce Ambiente"
 #: license.php:193
 msgid "and click on Download > License certificate & purchase code"
 msgstr "e fai clic su Download > Certificato di licenza e codice di acquisto"
+
+#: edit.js
+msgid "Angle"
+msgstr "Angolo"
 
 #: edit.js
 msgid "Animation Mixer"
@@ -102,6 +106,10 @@ msgid "Camera Position"
 msgstr "Posizioni Camera"
 
 #: edit.js
+msgid "Position"
+msgstr "Posizione"
+
+#: edit.js
 msgid "Camera Target"
 msgstr "Centratura Camera"
 
@@ -128,6 +136,10 @@ msgstr "Cerchio"
 #: license.php:193
 msgid "Codecanyon Download page"
 msgstr "Codecanyon pagina Download"
+
+#: edit.js
+msgid "Color"
+msgstr "Colore"
 
 #: edit.js
 msgid "Colors"
@@ -166,12 +178,20 @@ msgid "Darkness"
 msgstr "Ombreggiature"
 
 #: edit.js
+msgid "Decay"
+msgstr "Decadenza"
+
+#: edit.js
 msgid "Default"
 msgstr "Predefinita"
 
 #: edit.js
 msgid "Deg"
 msgstr "Gradi"
+
+#: edit.js
+msgid "Density"
+msgstr "Densità"
 
 #: point:edit.js
 msgid "Description"
@@ -186,8 +206,20 @@ msgid "Dimension"
 msgstr "Dimensione"
 
 #: edit.js
+msgid "Directional"
+msgstr "Direzionale"
+
+#: edit.js
+msgid "Directional Light"
+msgstr "Luce Direzionale"
+
+#: edit.js
 msgid "Display Number"
 msgstr "Visualizza Numero"
+
+#: edit.js
+msgid "Distance"
+msgstr "Distanza"
 
 #: license.php:354
 msgid "Download latest"
@@ -206,6 +238,14 @@ msgid "Enable Contact Shadow"
 msgstr "Abilita Ombra di Contatto"
 
 #: edit.js
+msgid "Enable Floor"
+msgstr "Abilita Pavimento"
+
+#: edit.js
+msgid "Enable Fog"
+msgstr "Abilita Nebbia"
+
+#: edit.js
 msgid "Enable Helpers"
 msgstr "Abilita Aiuti"
 
@@ -216,6 +256,10 @@ msgstr "Abilita Luce Sinistra"
 #: edit.js
 msgid "Enable Right Light"
 msgstr "Abilita Luce Destra"
+
+#: edit.js
+msgid "Enable Shadows"
+msgstr "Abilita Ombre"
 
 #: edit.js
 msgid "Enable Transform"
@@ -250,6 +294,10 @@ msgid "Failed to look up Envato API"
 msgstr "Impossibile trovare l'API Envato"
 
 #: edit.js
+msgid "Far"
+msgstr "Lontano"
+
+#: edit.js
 msgid "File Name"
 msgstr "Nome File"
 
@@ -264,6 +312,18 @@ msgstr "Fissa"
 #: edit.js
 msgid "Floor"
 msgstr "Pavimento"
+
+#: edit.js
+msgid "Flying Point"
+msgstr "Luci Volanti"
+
+#: edit.js
+msgid "Focus"
+msgstr "Inquadratura"
+
+#: edit.js
+msgid "Fog"
+msgstr "Nebbia"
 
 #: edit.js
 msgid "Folder URL"
@@ -297,6 +357,10 @@ msgstr "Altezza"
 msgid "Helpers"
 msgstr "Aiuti"
 
+#: edit.js
+msgid "Horizon"
+msgstr "Orizzonte"
+
 #: point:edit.js
 msgid "Image"
 msgstr "Immagine"
@@ -324,6 +388,10 @@ msgstr "installato"
 #: license.php:222
 msgid "Integrations"
 msgstr "Integrazioni"
+
+#: edit.js
+msgid "Intensity"
+msgstr "Intensità"
 
 #: edit.js
 msgid "Interactivity"
@@ -382,12 +450,36 @@ msgid "Light"
 msgstr "Luce"
 
 #: edit.js
+msgid "Light and Shadow"
+msgstr "Luce e Ombra"
+
+#: edit.js
+msgid "Light Color"
+msgstr "Colore Luce"
+
+#: edit.js
 msgid "Light Intensity"
 msgstr "Intensità luce"
+
+#: edit.js
+msgid "Light Map"
+msgstr "Mappa Immagine"
+
+#: edit.js
+msgid "Light Type"
+msgstr "Tipo di Luce"
+
+#: edit.js
+msgid "Lights"
+msgstr "Luci"
 
 #: point:edit.js
 msgid "Longitude"
 msgstr "Longitudine"
+
+#: edit.js
+msgid "Map Image"
+msgstr "Mappa Immagine"
 
 #: edit.js
 msgid "Media File"
@@ -421,6 +513,10 @@ msgstr "Muovi Nuvole"
 msgid "Navigator"
 msgstr "Navigatore"
 
+#: edit.js
+msgid "Near"
+msgstr "Vicino"
+
 #. Author of the plugin
 msgid "Nerds Farm srl"
 msgstr "Nerds Farm srl"
@@ -450,8 +546,16 @@ msgid "Output Encoding"
 msgstr "Codifica di Output"
 
 #: edit.js
+msgid "Penumbra"
+msgstr "Penombra"
+
+#: edit.js
 msgid "Point"
 msgstr "Punto"
+
+#: edit.js
+msgid "Point Light"
+msgstr "Luce Punto"
 
 #: edit.js
 msgid "Points"
@@ -518,6 +622,10 @@ msgid "Right Light Intensity"
 msgstr "Intensità Luce Destra"
 
 #: edit.js
+msgid "Room"
+msgstr "Stanza"
+
+#: edit.js
 msgid "Rotation"
 msgstr "Rotazione"
 
@@ -550,6 +658,10 @@ msgid "Shadows"
 msgstr "Ombre"
 
 #: edit.js
+msgid "Shadow"
+msgstr "Ombra"
+
+#: edit.js
 msgid "Show Chrome Sphere"
 msgstr "Mostra la sfera cromata"
 
@@ -573,6 +685,14 @@ msgid "Speed"
 msgstr "Velocità"
 
 #: edit.js
+msgid "Sphere"
+msgstr "Sfera"
+
+#: edit.js
+msgid "Spot"
+msgstr "Spot"
+
+#: edit.js
 msgid "Spot Light"
 msgstr "Luce Spot"
 
@@ -583,6 +703,18 @@ msgstr "Intensità Luce Spot"
 #: edit.js
 msgid "Square"
 msgstr "Quadrato"
+
+#: edit.js
+msgid "Stage 2"
+msgstr "Palcoscenico 2"
+
+#: edit.js
+msgid "Stage 3"
+msgstr "Palcoscenico 3"
+
+#: edit.js
+msgid "Stage 4"
+msgstr "Palcoscenico 4"
 
 #: SkyPanel.js
 msgid "Stars"
@@ -615,6 +747,10 @@ msgstr "Texture"
 #: edit.js
 msgid "Texture Image"
 msgstr "Immagine di texture"
+
+#: edit.js
+msgid "Texture Repeatition"
+msgstr "Ripetizione Texture"
 
 #: edit.js
 msgid "The file name. (without extension)"
@@ -690,6 +826,10 @@ msgstr "Usa Rilievo"
 #: edit.js
 msgid "Use Displacement"
 msgstr "Usa Spostamento"
+
+#: edit.js
+msgid "Wall"
+msgstr "Muro"
 
 #: edit.js
 msgid "Water color"
