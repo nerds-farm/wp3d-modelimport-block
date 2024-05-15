@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly 
 
 $h = $attributes['viewport_ratio'] == "custom" ? 'height:'.$attributes['viewport_height'] : '';
 $fix = $attributes['viewport_fixed'] ? " wp3d-viewport_fixed" : "";

@@ -4,7 +4,6 @@ namespace WP3D;
 
 class Plugin {
 
-    
     //https://3dviewer.net/info/index.html#supported_file_formats
     public static $mimes = [
         'stl' => 'application/octet-stream',
@@ -15,12 +14,9 @@ class Plugin {
         'zip' => 'application/zip',
         'usdz' => 'model/vnd.usdz+zip',
         'mp4' => 'video/mp4',
-        
         'ttf' => 'application/x-font-ttf', // font
         'dae' => 'model/dae',
         'fbx' => 'model/fbx',
-        //'jpg' => 'image/jpeg',
-        //'png' => 'image/png',
         'hdr' => 'image/vnd.radiance',
         'exr' => 'image/x-exr',
         'json' => 'application/json'
@@ -59,7 +55,6 @@ class Plugin {
         'json' => 'application/json'
     ];
 
-    
     /**
      * Instance.
      *
@@ -82,10 +77,9 @@ class Plugin {
      */
     public function __construct() {
 
-	$this->setup_hooks();
+        $this->setup_hooks();
 
         $this->handle_import_file();
-
     }
 
     /**
@@ -120,13 +114,12 @@ class Plugin {
 
         add_action('wp_enqueue_scripts', [$this, 'wp3d_register_plugin_libs']);
         add_action('enqueue_block_editor_assets', [$this, 'wp3d_register_plugin_libs']);
-        //add_action('wp_enqueue_scripts', [$this, 'wp_enqueue_scripts']);
         add_action('admin_enqueue_scripts', [$this, 'admin_enqueue_scripts']);
         add_action('enqueue_block_assets', [$this, 'admin_enqueue_scripts']);
         add_action('enqueue_block_editor_assets', [$this, 'enqueue_block_editor_assets']);
         add_action('wp_enqueue_scripts', [$this, 'wp3d_modelimport_custom_javascript']);
         add_action('admin_enqueue_scripts', [$this, 'wp3d_modelimport_custom_javascript']);
-        add_action('wp_enqueue_scripts', [$this, 'wp3d_modelimport_load_frontscript'] );
+        add_action('wp_enqueue_scripts', [$this, 'wp3d_modelimport_load_frontscript']);
         add_filter('block_categories_all', [$this, 'block_categories_all']);
 
         add_filter('upload_mimes', [$this, 'add_3d_mime_types']);
@@ -176,54 +169,79 @@ class Plugin {
 
         if (!empty($_GET['action']) && $_GET['action'] == 'wp3d') {
             if (!empty($_GET['url'])) {
-                // Check for nonce security      
-                if (wp_verify_nonce($_GET['nonce'], 'wp3d-nonce')) {
-                    $url = sanitize_url($_GET['url']);
+                if (!empty($_GET['nonce'])) {
+                    $nonce = sanitize_text_field( wp_unslash( $_GET['nonce']) );
+                    // Check for nonce security      
+                    if (wp_verify_nonce($nonce, 'wp3d-nonce')) {
+                        $url = sanitize_url($_GET['url']);
 
-                    $media_id = attachment_url_to_postid($url);
+                        $media_id = attachment_url_to_postid($url);
 
-                    if ($media_id) {
-                        $file_path = get_attached_file($media_id);
-                        $file_path = str_replace('/', DIRECTORY_SEPARATOR, $file_path);
+                        if ($media_id) {
+                            $wp_filesystem = $this->get_filesystem();
+                            $file_path = get_attached_file($media_id);
+                            $file_path = str_replace('/', DIRECTORY_SEPARATOR, $file_path);
 
-                        if (file_exists($file_path)) {
-                            $file_info = pathinfo($file_path); //[dirname],[basename],[extension],[filename]
-                            $wp_upload_dir = wp_upload_dir();
-                            switch ($file_info['extension']) {
-                                case 'zip':
-
-                                    $folder_3d = $wp_upload_dir['basedir'] . DIRECTORY_SEPARATOR . 'wp3d' . DIRECTORY_SEPARATOR . $media_id;
-                                    $folder_3d = str_replace('/', DIRECTORY_SEPARATOR, $folder_3d);
-                                    if (!is_dir($folder_3d)) {
-                                        // extract in /uploads/wp3d/ID
-                                        include_once(ABSPATH . DIRECTORY_SEPARATOR . 'wp-admin' . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'file.php');
-                                        $unzip = unzip_file($file_path, $folder_3d);
-                                        $zip = new \ZipArchive;
-                                        if ($zip->open($file_path) === TRUE) {
-                                            $zip->extractTo($folder_3d);
-                                            $zip->close();
+                            if ($wp_filesystem->exists($file_path)) {
+                                $file_info = pathinfo($file_path); //[dirname],[basename],[extension],[filename]
+                                $wp_upload_dir = wp_upload_dir();
+                                switch ($file_info['extension']) {
+                                    case 'zip':
+                                        $folder_3d = $wp_upload_dir['basedir'] . DIRECTORY_SEPARATOR . 'wp3d' . DIRECTORY_SEPARATOR . $media_id;
+                                        $folder_3d = str_replace('/', DIRECTORY_SEPARATOR, $folder_3d);
+                                        if (!$wp_filesystem->is_dir($folder_3d)) {
+                                            // extract in /uploads/wp3d/ID
+                                            include_once(ABSPATH . DIRECTORY_SEPARATOR . 'wp-admin' . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'file.php');
+                                            $unzip = unzip_file($file_path, $folder_3d);
+                                            $zip = new \ZipArchive;
+                                            if ($zip->open($file_path) === TRUE) {
+                                                $zip->extractTo($folder_3d);
+                                                $zip->close();
+                                            }
                                         }
-                                    }
-                                    // search inside the folder a valid file
-                                    $extensions = !empty($_GET['type']) ? $_GET['type'] : Utils::implode(array_filter(array_keys(self::$types)), '|');
-                                    $file = $this->rsearch($folder_3d, "/^.*\.(" . $extensions . ")$/");
-                                    if (!empty($file)) {
-                                        $file_path = reset($file);
-                                        $file_info = pathinfo($file_path);
-                                    }
-                                    break;
-                            }
+                                        // search inside the folder a valid file
+                                        $extensions = !empty($_GET['type']) ? sanitize_key($_GET['type']) : Utils::implode(array_filter(array_keys(self::$types)), '|');
+                                        $file = $this->rsearch($folder_3d, "/^.*\.(" . $extensions . ")$/");
+                                        if (!empty($file)) {
+                                            $file_path = reset($file);
+                                            $file_info = pathinfo($file_path);
+                                        }
+                                        break;
+                                }
 
-                            list($pre, $folder) = explode('uploads', $file_info['dirname'], 2);
-                            $folder = str_replace(DIRECTORY_SEPARATOR, '/', $folder);
-                            $url = $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
+                                list($pre, $folder) = explode('uploads', $file_info['dirname'], 2);
+                                $folder = str_replace(DIRECTORY_SEPARATOR, '/', $folder);
+                                $url = $wp_upload_dir['baseurl'] . $folder . '/' . $file_info['filename'] . '.' . $file_info['extension'];
+                            }
                         }
+                        echo esc_url($url);
+                        die();
                     }
-                    echo esc_url($url);
-                    die();
                 }
             }
         }
+    }
+
+    public function get_filesystem() {
+        global $wp_filesystem;
+
+        if (!$wp_filesystem) {
+            require_once( ABSPATH . DIRECTORY_SEPARATOR . 'wp-admin' . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'file.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+            $context = apply_filters('request_filesystem_credentials_context', false);
+            $creds = request_filesystem_credentials(site_url(), '', false, $context, null);
+            \WP_Filesystem($creds, $context);
+        }
+
+        // Set the permission constants if not already set.
+        if (!defined('FS_CHMOD_DIR')) {
+            define('FS_CHMOD_DIR', 0755);
+        }
+
+        if (!defined('FS_CHMOD_FILE')) {
+            define('FS_CHMOD_FILE', 0644);
+        }
+
+        return $wp_filesystem;
     }
 
     public function rsearch($folder, $pattern) {
@@ -256,12 +274,11 @@ class Plugin {
                 [
                     [
                         'slug' => 'wp3d-blocks',
-                        'title' =>'Wp3D',
+                        'title' => 'Wp3D',
                     ],
                 ],
                 $categories,
         );
-        
     }
 
     public function wp3d_register_plugin_libs() {
@@ -270,7 +287,7 @@ class Plugin {
     }
 
     public function admin_enqueue_scripts() {
-        if ( is_admin() ) {
+        if (is_admin()) {
             wp_enqueue_style('wp3d-modelimport-icons', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/css/wp3d-icons.css', false, '1.0.0');
             wp_enqueue_style('wp3d-modelimport-admin', WP3D_MODELIMPORT_PLUGIN_URL . 'assets/css/admin.css', false, '1.0.0');
         }
@@ -293,6 +310,7 @@ class Plugin {
                 plugin_dir_path(__FILE__) . 'languages'
         );
     }
+
     public function wp3d_modelimport_load_frontscript() {
 
         wp_localize_script('wp3d-modelimport-view-script', 'ajax_var', array(

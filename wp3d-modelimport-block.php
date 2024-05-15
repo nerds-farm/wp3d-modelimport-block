@@ -4,11 +4,11 @@
  * Description:       The import of models is allowed from Media Library, Folders and also from CDN. There are many allowed formats. Ideal to display all kinds models. The aim is to combine 3D and Web Design.
  * Requires at least: 6.0
  * Requires PHP:      7.4
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            WP3D
  * Plugin URI:        https://wp3d.site
  * License:           GPL-3.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       wp3d-modelimport
  * Domain Path:       /languages
  *
@@ -35,6 +35,8 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly 
 
 add_action('init', function () {
     

@@ -5,8 +5,8 @@ Donate link:       https://wp3d.site/
 Tags:              block, wp3d, three.js, 3d, model, glb, gltf
 Requires at least: 6.0
 Requires PHP:      7.4
-Tested up to:      6.5.2
-Stable tag:        1.0
+Tested up to:      6.5.3
+Stable tag:        1.0.1
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -86,5 +86,5 @@ No, maybe in future, please ask us the specific version.
 5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
-= 0.1.0 =
+= 1.0.0 =
 * Model Import 3D for Gutenberg Block
