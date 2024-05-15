@@ -86,5 +86,11 @@ No, maybe in future, please ask us the specific version.
 5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
+= 1.0.4 =
+* Optimizations
+* LazyLoad Model
+* Introducing camera Phi/Theta/radius
+* Fix
+
 = 1.0.0 =
 * Model Import 3D for Gutenberg Block

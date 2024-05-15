@@ -231,6 +231,7 @@ class e_threed_class_modelimport {
             this.add_modelimport($props);
         }else{
             this.detectScroll(this.targetScope, () => {
+                this.isRendered = true;
                 this.add_modelimport($props);
             })
         }
