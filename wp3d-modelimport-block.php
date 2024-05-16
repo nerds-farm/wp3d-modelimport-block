@@ -6,7 +6,8 @@
  * Requires PHP:      7.4
  * Version:           1.0.5
  * Author:            WP3D
- * Plugin URI:        https://wp3d.site
+ * Author URI:        https://wp3d.site
+ * Plugin URI:        https://wp3d.site/widget/3d-model-import-for-gutenberg-and-elementor/
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       wp3d-modelimport
