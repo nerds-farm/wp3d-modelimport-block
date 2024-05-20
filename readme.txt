@@ -2,11 +2,11 @@
 Author:            WP3D
 Contributors:      poglie, frapesce
 Donate link:       https://wp3d.site/
-Tags:              three.js, 3d, model, stl, gltf
+Tags:              three.js, 3d, mesh, stl, gltf
 Requires at least: 6.0
 Requires PHP:      7.4
 Tested up to:      6.5.3
-Stable tag:        1.0.5
+Stable tag:        1.0.6
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -94,11 +94,11 @@ No, maybe in future, please ask us the specific version.
 5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
-= 1.0.5 =
+= 1.0.6 =
 * Optimizations
 * LazyLoad Model
 * Introducing camera Phi/Theta/radius
-* Fix
+* WP Fix
 
 = 1.0.0 =
 * Model Import 3D for Gutenberg Block
