@@ -179,6 +179,9 @@ export default function Edit( props ) {
 		camera_posx,
 		camera_posy,
 		camera_posz,
+		camera_phi,
+		camera_theta,
+		camera_radius,
 		camera_targetx,
 		camera_targety,
 		camera_targetz,
@@ -925,7 +928,7 @@ export default function Edit( props ) {
 							<h3>{__('Spherical', 'wp3d-modelimport')}</h3>
 							<RangeControl
 								label = {__('Phi', 'wp3d-modelimport')}
-								value={ camera_posx }
+								value={ camera_phi }
 								onChange={ ( val ) => onChangeValue("camera_phi",{ camera_phi: val }) }
 								min={ -10 }
 								max={ 10 }
@@ -935,7 +938,7 @@ export default function Edit( props ) {
 							/>
 							<RangeControl
 								label = {__('Theta', 'wp3d-modelimport')}
-								value = { camera_posy }
+								value = { camera_theta }
 								onChange={ ( val ) => onChangeValue("camera_theta",{ camera_theta: val }) }
 								min = { -10 }
 								max = { 10 }
@@ -945,7 +948,7 @@ export default function Edit( props ) {
 							/>
 							<RangeControl
 								label = {__('Radius', 'wp3d-modelimport')}
-								value={ camera_posz }
+								value={ camera_radius }
 								onChange={ ( val ) => onChangeValue("camera_radius",{ camera_radius: val }) }
 								min = { 0 }
 								max = { 10 }

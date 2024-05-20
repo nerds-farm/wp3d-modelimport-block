@@ -9,7 +9,6 @@ import {
     OrthographicCamera,
     Scene,
     WebGLRenderTarget,
-    
     MeshBasicMaterial,
     ShadowMaterial,
     TextureLoader,
@@ -297,7 +296,12 @@ class e_threed_class_modelimport {
         this.cameraPosY = this.propN('camera_posy', 0);
         // pos Z
         this.cameraPosZ = this.propN('camera_posz', 4);
-
+        // phi
+        this.cameraPhi = this.propN('camera_phi', 0);
+        // theta
+        this.cameraTheta = this.propN('camera_theta', 0);
+        // radius
+        this.cameraRadius = this.propN('camera_radius', 4);
         // target X
         this.cameraTargetX = this.propN('camera_targetx', 0);
         // target Y
@@ -1890,6 +1894,13 @@ class e_threed_class_modelimport {
         // alert(this.cameraFov+' '+this.cameraZoom)
         // console.log('cam',this.camera)
     }
+    positionCamera(){
+        let p = this.moveTo.calcPosFromSpherical(this.cameraPhi,this.cameraTheta,this.cameraRadius);
+        this.camera.position.set(p[0],p[1],p[2]);
+
+        this.camera.zoom = this.cameraZoom;
+        this.camera.fov = this.cameraFov;
+    }
 
     // SKY IMAGE --------------------- 
     generateSkyImage(){
@@ -2717,7 +2728,38 @@ class e_threed_class_modelimport {
             this.render();
             this.moveTo.change(); // Tricks
         }
+        
+        if ('camera_phi' === propertyName) {
+             // phi
+            this.cameraPhi = this.propN('camera_phi', 0);
 
+            this.positionCamera();
+
+            this.camera.updateProjectionMatrix();
+            this.render();
+            this.moveTo.change(); // Tricks
+        }
+        if ('camera_theta' === propertyName) {
+            // theta
+            this.cameraTheta = this.propN('camera_theta', 0);
+
+            this.positionCamera();
+
+            this.camera.updateProjectionMatrix();
+            this.render();
+            this.moveTo.change(); // Tricks
+        }
+        if ('camera_radius' === propertyName) {
+            // radius
+            this.cameraRadius = this.propN('camera_radius', 4);
+
+            this.positionCamera();
+
+            this.camera.updateProjectionMatrix();
+            this.render();
+            this.moveTo.change(); // Tricks
+        }
+       
         // TARGET x-y-z
         if ('camera_targetx' === propertyName) {
             this.cameraTargetX = this.propN('camera_targetx', 0);
