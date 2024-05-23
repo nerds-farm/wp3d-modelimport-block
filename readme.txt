@@ -87,11 +87,14 @@ No, maybe in future, please ask us the specific version.
 
 == Screenshots ==
 
-1. ss_importFile3d.png - Easy import any 3D object file via Media Library, it works also with 3D zip folders, or with the URL of the remoted media (using it with CDN)
-2. ss_light.png - Setup the light which give more reality to your 3D Object
-3. ss_sky.png - Adding a background Image, Transparent or a Plain Color will increase the integration with your page with an immersive situation
-4. ss_camera.png - Move your camera to set the best position for your target, zooming and moving for the best fit 
-5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
+1. FEATURES: A lot of incredible and very useful features are available for free 
+2. MEDIA: Easy import any 3D object file via Media Library, it works also with 3D zip folders, or with the URL of the remote media (using it with CDN)
+3. LIGHT: Setup the light which give more reality to your 3D Object
+4. SKY: Adding a background Image, Transparent or a Plain Color will increase the integration with your page with an immersive situation
+5. CAMERA: Move your camera to set the best position for your target, zooming and moving for the best fit 
+6. SHADOW: Get most realistic image using a natural Shadow, based on your configured Light
+7. INTERACTIVITY: Move, zoom, rotate and play with the object using your mouse/touch
+8. TRANSFORM: Change the position and dimension of the loaded object in the scene
 
 == Changelog ==
 = 1.0.6 =
