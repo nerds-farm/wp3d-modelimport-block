@@ -94,6 +94,9 @@ No, maybe in future, please ask us the specific version.
 5. ss_contactShadow.png - Get most realistic image using a natural Shadow, based on your configured Light
 
 == Changelog ==
+= 1.0.7 =
+* WP Fix
+
 = 1.0.6 =
 * Optimizations
 * LazyLoad Model
