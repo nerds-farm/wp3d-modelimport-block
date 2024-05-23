@@ -97,6 +97,9 @@ No, maybe in future, please ask us the specific version.
 8. TRANSFORM: Change the position and dimension of the loaded object in the scene
 
 == Changelog ==
+= 1.0.7 =
+* WP Fix
+
 = 1.0.6 =
 * Optimizations
 * LazyLoad Model
